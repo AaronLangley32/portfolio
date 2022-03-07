@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarons Hood</title>
+    <script src="https://kit.fontawesome.com/3b0e7bd208.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <ul class="navbar_items">
+                <li class="link_container">
+                    <div class="up_arrow">
+                        <a href="/" onclick="route()" class="link">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="link_container">
+                    <div class="normal_link">
+                        <a href="/about" onclick="route()" class="link">
+                            <i class="fa-solid fa-address-card"></i>
+                            <span class="link_name">About Me</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="link_container">
+                    <div class="normal_link">
+                        <a href="/experiences" onclick="route()" class="link">
+                            <i class="fa-solid fa-code"></i>
+                            <span class="link_name">My Developing Skills</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="link_container">
+                    <div class="normal_link">
+                        <a href="/skills" onclick="route()" class="link">
+                            <i class="fa-solid fa-wrench"></i>
+                            <span class="link_name">Other Skills</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="link_container">
+                    <div class="normal_link">
+                        <a href="/projects" onclick="route()" class="link">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span class="link_name">My Projects</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="link_container">
+                    <div class="normal_link">
+                        <a href="/contact" onclick="route()" class="link">
+                            <i class="fa-solid fa-at"></i>
+                            <span class="link_name">Contact Me</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="link_container">
+                    <div class="down_arrow">
+                        <a href="/contact" onclick="route()" class="link">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="main_page"></div>
+    <script src="js/router.js"></script>
+</body>
+</html>

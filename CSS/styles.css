@@ -1,0 +1,128 @@
+@import "./resets.css";
+
+:root {
+  --text-color: #f0f0f0;
+  --text-hovered-color: #fdfcfc;
+  --navbar-color: #f0f0f034;
+  --icon-color: #cbf6ed;
+  --icon-hovered-color: #defcf5;
+  --icon-dark-color: #49d49d;
+  --icon-hovered-dark-color: #64f1b9;
+  --background-dark-color: #574a47;
+  --background-alt-color: #c4faf3c0;
+}
+
+/* Resets */
+body,
+html {
+  height: 100%;
+  background-color: var(--background-dark-color);
+  font-size: 62.5%;
+}
+
+/* Navbar */
+.navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+.navbar_container {
+  /* height: 450px;
+  border-radius: 25px;
+  background-color: var(--navbar-color); */
+  width: 50px;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_items {
+}
+.link_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link_container:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+.up_arrow {
+  color: var(--icon-dark-color);
+  font-size: 2rem;
+  padding: 0rem 0rem 3rem 0rem;
+}
+.up_arrow:hover {
+  color: var(--icon-hovered-dark-color);
+}
+.normal_link {
+  color: var(--icon-color);
+  font-size: 2rem;
+  padding: 1rem 0rem 1rem 0rem;
+}
+.normal_link:hover {
+  color: var(--icon-hovered-color);
+}
+.down_arrow {
+  color: var(--icon-dark-color);
+  font-size: 2rem;
+  padding: 3rem 0rem 0rem 0rem;
+}
+.down_arrow:hover {
+  color: var(--icon-hovered-dark-color);
+}
+.link {
+  cursor: pointer;
+}
+.link_name {
+  display: none;
+}
+
+/* Main Section */
+
+body {
+  position: relative;
+}
+.page_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+}
+.page {
+  height: 85%;
+  margin: 0px 75px 0px 75px;
+  border: 1px dashed var(--icon-dark-color);
+}
+.page_header {
+  padding: 2rem 2rem 0rem 2rem;
+  color: var(--text-color);
+  font-size: 3rem;
+  text-align: center;
+}
+.page_body {
+  padding: 5rem 2rem 0rem 2rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .page_header {
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+  }
+  .page_body {
+    padding-top: 6rem;
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+  }
+}
