@@ -1,0 +1,73 @@
+/* Reference : https://piccalil.li/blog/a-modern-css-reset/ */
+
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+}
+
+
+/* Remove default margin & padding*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Remove list styles on ul, ol*/
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* Set core root defaults */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+/* Set core body defaults */
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+
+/* A elements styles */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
