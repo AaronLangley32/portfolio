@@ -1,0 +1,32 @@
+:root {
+  --navbar-animation-time: 400ms;
+}
+#link1 {
+  animation: nav-load calc(var(--navbar-animation-time) + 100ms) forwards;
+}
+#link2 {
+  animation: nav-load calc(var(--navbar-animation-time) + 200ms) forwards;
+}
+#link3 {
+  animation: nav-load calc(var(--navbar-animation-time) + 300ms) forwards;
+}
+#link4 {
+  animation: nav-load calc(var(--navbar-animation-time) + 400ms) forwards;
+}
+#link5 {
+  animation: nav-load calc(var(--navbar-animation-time) + 500ms) forwards;
+}
+@keyframes nav-load {
+  0% {
+    transform: translateX(-300%);
+    opacity: 0%;
+  }
+  75% {
+    transform: translateX(50%);
+    opacity: 70%;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}

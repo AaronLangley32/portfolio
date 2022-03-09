@@ -1,11 +1,49 @@
 <main class="page_container">
-    <div id="aboutPage" class="page">
-        <div class="page_header">
-            <h1>Front End Web Developer</h1>
-            <h3>Source Engine Level Designer</h2>
-        </div>
-        <div class="page_body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquid suscipit nesciunt eveniet debitis quas autem deleniti repellendus quidem nam, architecto hic eius provident porro unde, facilis temporibus enim molestiae. Illo dignissimos dolore, dolor odio libero praesentium neque repellat quo nobis cupiditate at, sint placeat. Illo distinctio dolore consectetur. Soluta, nemo adipisci! Esse ea officia modi alias, eos libero soluta, fuga facere sunt debitis ullam accusamus inventore, aliquam quasi labore? Atque rem alias accusamus illo blanditiis perferendis. Id ea nesciunt, quaerat incidunt illo ab voluptatem unde sequi eum doloribus hic impedit quibusdam. Ipsam, in sunt facere voluptas quo vel possimus.</p>
+    <div id="aboutPage" class="page" style="display: flex; align-items: center; justify-content: center;">
+        <div id="form_page_body" class="page_body">
+            <div class="form_container">
+                <div id="form_page_header" class="page_header">
+                    <span>Shoot</span>
+                    <span>Me</span>
+                    <span>A</span>
+                    <span>Message</span>
+                </div>
+                <div id="form_page_header2" class="page_header2">
+                    <span>Or</span>
+                    <span>Stalk</span>
+                    <span>My</span>
+                    <span>Socials</span>
+                </div>
+                <div class="form">
+                    <form action="action_page.php">
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your Name"
+                            required
+                        >
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                        >
+                        <textarea
+                            id="subject"
+                            name="subject"
+                            placeholder="Write something.."
+                            required
+                        ></textarea>
+                        <input
+                            id="submit_button"
+                            type="submit"
+                            value="Submit"
+                        >
+                    </form>
+                </div>            
+            </div>
         </div>
     </div>
 </main>

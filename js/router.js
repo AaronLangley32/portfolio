@@ -10,7 +10,7 @@ const route = (event) => {
 
 const routes = {
     404: "/pages/404.html",
-    "/": "/pages/aboutPage.html",
+    "/": "/pages/contactPage.html",
 	"/index.html": "/pages/aboutPage.html",
     "/about": "/pages/aboutPage.html",
     "/experiences": "/pages/experiencesPage.html",
