@@ -56,7 +56,7 @@
 .page_body {
   opacity: 0%;
   transform: translateY(-20px);
-  animation: page-load 400ms 1s ease-in forwards;
+  animation: page-load 400ms 1.75s ease-in forwards;
 }
 #form_page_body {
   opacity: 0%;
